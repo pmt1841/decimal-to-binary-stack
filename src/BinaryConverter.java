@@ -1,3 +1,4 @@
+import java.util.Scanner;
 import java.util.Stack;
 
 public class BinaryConverter {
@@ -20,9 +21,10 @@ public class BinaryConverter {
     }
 
     public static void main(String[] args) {
-        convertDecimalToBinary(18);
-        convertDecimalToBinary(0);
-        convertDecimalToBinary(4);
-        convertDecimalToBinary(2001);
+        System.out.println("Binary Converter");
+        System.out.print("Enter decimal number: ");
+        Scanner input = new Scanner(System.in);
+        int decimal = input.nextInt();
+        convertDecimalToBinary(decimal);
     }
 }
